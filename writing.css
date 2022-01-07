@@ -1,0 +1,61 @@
+.writing_container{
+    position: fixed;
+    top: 68px;
+    display: flex;
+    height: 650px;
+    width: 92%;
+    margin-top: 20px;
+    background-color:#6CB2D8;
+    border: 1px solid #045D8B;
+    border-radius: 10px;
+    padding:20px;
+
+    justify-content: center;
+    
+    
+}
+
+.writing_board_title{
+    position: fixed;
+    display: flex;
+    height: 30px;
+    width: 90%;
+    background-color: #CDE9F9;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    justify-content:flex-start;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #045D8B;
+    border-radius: 10px;
+
+}
+
+.writing_board_body{
+    position: fixed;
+    display: flex;
+    margin-top: 80px;
+    height: 500px;
+    width: 90%;
+    padding: 2%;
+    background-color: #98CEEB;
+    border: 1px solid #045D8B;
+    border-radius: 10px;
+}
+
+.enroll{
+    position: fixed;
+    left: 89%;
+    top: 800px;
+    width: 60px;
+  padding: 8px 0;
+  text-align: center;
+  color: white;
+  background-color: #2A7AA5;
+
+  margin-bottom: 5%;
+  border: 1px solid #045D8B;
+  border-radius: 10px;
+}
