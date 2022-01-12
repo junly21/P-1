@@ -7,14 +7,12 @@ const app = express();
 app.get('경로', function(요청,응답){
     응답.send('이동했습니다.');
 
-    app.listen(8081, function(){//8081 port에 서버 띄워주세요 바꿔도됨
-    console.log('listening on 8081')
+   
     //8081port로 웹서버를 열고 잘 열리면 listening on 8081을 출력하세요
-});
+});*/
+ app.listen(8081, function(){//8081 port에 서버 띄워주세요 바꿔도됨
+    console.log('listening on 8081')});
 
-
-});
-*/
 
 //보통 요청 응답은 req, res로 표현
 

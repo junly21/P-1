@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <title>History API Sample</title>
+    <meta charset="utf-8">
+    <style>
+      section {margin: 20px 0;}
+    </style>
+  </head>
+  <body>
+    <section>
+      <h2>게시판 이동</h2>
+      <button id="자유">자유게시판</button>
+      <button id="비밀">비밀게시판</button>
+      <button id="정보">정보게시판</button>
+      <button id="홍보">홍보게시판</button>
+      <button id="SW">SW게시판</button>
+    </section>
+    <section>
+      <h2>replace state</h2>
+      <button id="replace-state">replaceState</button>
+    </section>
+    <section>
+      <h2>history state</h2>
+      <span id="state"></span>
+    </section>
+
+    <script>
+        // history state 출력,  =>는 따로 알아볼것.
+const currentHistoryState = () => {
+    document.getElementById('state').innerText = JSON.stringify(history.state);
+  };
+   
+  currentHistoryState();
+   
+  // pushState()
+  document.getElementById('자유').addEventListener('click', () => {
+    history.pushState({data: '자유게'}, '', '/자유');
+    currentHistoryState();
+  });
+  document.getElementById('비밀').addEventListener('click', () => {
+    history.pushState({data: '비밀게'}, '', '/비밀');
+    currentHistoryState();
+  });
+  document.getElementById('정보').addEventListener('click', () => {
+    history.pushState({data: '정보게'}, '', '/정보');
+    currentHistoryState();
+  });
+  document.getElementById('홍보').addEventListener('click', () => {
+    history.pushState({data: '홍보게'}, '', '/홍보');
+    currentHistoryState();
+  });
+  document.getElementById('SW').addEventListener('click', () => {
+    history.pushState({data: 'SW'}, '', '/SW');
+    currentHistoryState();
+  });
+   
+  // replaceState()
+  document.getElementById('replace-state').addEventListener('click', () => {
+    history.replaceState({data: 'replaceState'}, '', '/replace-state');
+    currentHistoryState();
+  });
+   
+  // 브라우저의 뒤로가기 / 앞으로가기를 누르면 history state 값을 확인하여 출력합니다.
+  window.addEventListener('popstate', () => {
+    currentHistoryState();
+  });
+    </script>
+  </body>
+</html>
+
