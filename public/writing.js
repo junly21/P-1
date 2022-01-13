@@ -15,3 +15,4 @@ function submitWriting(){
 
 writing_btn.addEventListener("click", startWriting);
 submit_btn.addEventListener("click", submitWriting);
+

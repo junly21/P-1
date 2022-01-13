@@ -1,6 +1,7 @@
 @import "nav-bar.css";
 @import "upper.css";
 @import "writing.css";
+@import "menubar.css";
 
 .hidden {
     display: none;

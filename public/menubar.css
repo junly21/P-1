@@ -1,0 +1,48 @@
+.menubar{
+    position: fixed;
+    width: 180px;
+    height: 660px;
+    display: none;
+    background-color: #013754;
+    margin-top: 60px;
+    color:white;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    
+}
+
+#board_free{
+    margin-top: 60px;
+    display:flex;
+    
+    height: 50px;
+    justify-content: center;
+    
+
+}
+#board_secret{
+    display:flex;
+
+    height: 50px;
+    justify-content: center;
+}
+#board_info{
+    display:flex;
+
+    height: 50px;
+    justify-content: center;
+}
+#board_promote{
+    display:flex;
+
+    height: 50px;
+    justify-content: center;
+}
+#board_SW{
+    display:flex;
+
+    height: 50px;
+    justify-content: center;
+}
